@@ -1,0 +1,23 @@
+- Run Project CPU CLASS
+- Write the program in Program.txt
+- Write instructions in lower case;
+===================================
+in case of pipeline we are not handling jump or branch because it will led to hazards
+Example of a Program to write in Prgoram.txt;
+in case of single cycle:-
+-----------------------------
+add $t1,$t2,$t3
+beq $t1,$t4,L
+sub $t2,$t4,$t3
+j exit
+L : sw $t1,2($t2)
+exit : add $t4,$t2,$t3
+------------------------------
+in case of multicycle:-
+------------------------------
+addi $r1,$0,5
+lw $r2,0($r4)
+add $r3,$r10,$r11
+or $r4,$r11,$r12
+sw $r6,4($r10)
+------------------------------
